@@ -29,6 +29,7 @@ export class HomeComponent implements OnInit {
     // When Token Event is emitted by server catch the token and set it as a global variable ,it needs to be sent with every request
     this.socket.on('token',(tok)=>{
       this.session_token=tok;
+      console.log(tok);
     });
   }
 }
